@@ -1,40 +1,16 @@
 import 'package:flutter/material.dart';
+import 'pages/ConversationPageList.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(Genus());
 
-class MyApp extends StatelessWidget {
+class Genus extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Genus'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Text("Hello, World!")
-      ),
+      home: ConversationPageList(),
     );
   }
 }
