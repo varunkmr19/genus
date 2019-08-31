@@ -3,6 +3,7 @@ import 'package:genus/config/Palette.dart';
 
 class InputWidget extends StatelessWidget {
   final TextEditingController textEditingController = TextEditingController();
+  InputWidget();
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -21,6 +22,7 @@ class InputWidget extends StatelessWidget {
             child: Container(
               margin: EdgeInsets.symmetric(horizontal: 1.0),
               child: IconButton(
+                onPressed: () {},
                   icon: Icon(Icons.face),
                   color: Palette.primaryColor,
               ),
