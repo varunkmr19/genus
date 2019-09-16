@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'pages/ConversationPageList.dart';
+import 'package:genus/pages/ConversationPageSlide.dart';
+import 'package:genus/config/Palette.dart';
 
 void main() => runApp(Genus());
 
@@ -8,9 +9,9 @@ class Genus extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Palette.primaryColor,
       ),
-      home: ConversationPageList(),
+      home: ConversationPageSlide(),
     );
   }
 }

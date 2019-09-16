@@ -1,24 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:genus/config/Assets.dart';
 import 'package:genus/config/Palette.dart';
+import 'package:genus/config/Styles.dart';
 
 class ChatAppBar extends StatelessWidget implements PreferredSizeWidget {
   final double height = 100;
   const ChatAppBar();
   @override
   Widget build(BuildContext context) {
-    var textHeading = TextStyle(
-      color: Palette.primaryTextColor,
-      fontSize: 20
-    );
-    var textStyle = TextStyle(color: Palette.secondaryTextColor);
-
     return Material(
       child: Container(
         decoration: BoxDecoration(boxShadow: [
           BoxShadow(
-            color: Colors.black,
-            blurRadius: 5.0,
+            color: Colors.grey,
+            blurRadius: 2.0,
+            spreadRadius: 0.1
           )
         ]),
         child: Container(
@@ -58,10 +54,13 @@ class ChatAppBar extends StatelessWidget implements PreferredSizeWidget {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     mainAxisSize: MainAxisSize.min,
                                     children: <Widget>[
-                                      Text('Lisa Colt', style: textHeading),
+                                      Text(
+                                        'Lisa Colt',
+                                        style: Styles.textHeading,
+                                      ),
                                       Text(
                                         '@lisa_colt',
-                                        style: textStyle,
+                                        style: Styles.text,
                                       )
                                     ],
                                   ),
@@ -81,7 +80,7 @@ class ChatAppBar extends StatelessWidget implements PreferredSizeWidget {
                             children: <Widget>[
                               Text(
                                 'Photos',
-                                style: textStyle,
+                                style: Styles.text,
                               ),
                               VerticalDivider(
                                 width: 30,
@@ -89,7 +88,7 @@ class ChatAppBar extends StatelessWidget implements PreferredSizeWidget {
                               ),
                               Text(
                                 'Videos',
-                                style: textStyle,
+                                style: Styles.text,
                               ),
                               VerticalDivider(
                                 width: 30,
@@ -97,7 +96,7 @@ class ChatAppBar extends StatelessWidget implements PreferredSizeWidget {
                               ),
                               Text(
                                 'Files',
-                                style: textStyle,
+                                style: Styles.text,
                               )
                             ],
                           ),
