@@ -19,15 +19,29 @@ class _ConversationBottomSheetState extends State<ConversationBottomSheet> {
         backgroundColor: Colors.white,
         body: ListView(
           children: <Widget>[
-            NavigationPillWidget(),
-            Center(
-              child: Text(
-                'Messages',
-                style: Styles.textHeading,
+            GestureDetector(
+              child: ListView(
+                shrinkWrap: true,
+                physics: ClampingScrollPhysics(),
+                children: <Widget>[
+                  NavigationPillWidget(),
+                  Center(
+                    child: Text(
+                      'Messages',
+                      style: Styles.textHeading,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  )
+                ],
               ),
-            ),
-            SizedBox(
-              height: 20,
+              onVerticalDragEnd: (info) {
+                print('Pull Down');
+                if (info.primaryVelocity > 50) {
+                  Navigator.pop(context);
+                }
+              },
             ),
             ListView.separated(
               itemCount: 5,
