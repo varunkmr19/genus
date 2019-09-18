@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:genus/config/Palette.dart';
 
-class NavigationPullWidget extends StatelessWidget {
+class NavigationPillWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(

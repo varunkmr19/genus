@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:genus/config/Palette.dart';
 import 'package:genus/config/Styles.dart';
 import 'package:genus/widgets/ChatRowWidget.dart';
-import 'package:genus/widgets/NavigationPullWidget.dart';
+import 'package:genus/widgets/NavigationPillWidget.dart';
 
 class ConversationBottomSheet extends StatefulWidget {
   @override
@@ -19,7 +19,7 @@ class _ConversationBottomSheetState extends State<ConversationBottomSheet> {
         backgroundColor: Colors.white,
         body: ListView(
           children: <Widget>[
-            NavigationPullWidget(),
+            NavigationPillWidget(),
             Center(
               child: Text(
                 'Messages',
