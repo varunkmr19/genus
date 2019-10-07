@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:genus/config/Palette.dart';
 
 class CircleIndicator extends StatefulWidget {
-  bool isActive;
+  final bool isActive;
   CircleIndicator(this.isActive);
 
   @override
