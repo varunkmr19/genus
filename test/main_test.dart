@@ -7,14 +7,14 @@
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:genus/main.dart';
-import 'package:genus/pages/ConversationPageSlide.dart';
+import 'package:genus/pages/RegistrationPage.dart';
 
 void main() {
-  testWidgets("Checking if hello world shows up", (WidgetTester tester) async {
+  testWidgets("Main UI Test", (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(Genus());
 
-    expect(find.byType(ConversationPageSlide), findsOneWidget);
+    expect(find.byType(RegistrationPage), findsOneWidget);
   });
 
 

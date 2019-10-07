@@ -7,12 +7,38 @@ class Styles{
     color: Palette.primaryTextColor,
       fontSize: 20
   );
+  static TextStyle textHeadingLight = TextStyle(
+    fontSize: 20,
+    color: Palette.primaryTextColorLight
+  );
+  static TextStyle numberPickerHeading = TextStyle(
+    fontSize: 30,
+    color: Palette.primaryTextColorLight
+  );
+  static TextStyle question = TextStyle(
+      color: Palette.primaryTextColor,
+      fontSize: 16
+  );
+  static TextStyle questionLight = TextStyle(
+      color: Palette.primaryTextColorLight,
+      fontSize: 16
+  );
   static TextStyle subHeading = TextStyle(
     color: Palette.primaryTextColor,
     fontSize: 14
   );
+  static TextStyle subHeadingLight = TextStyle(
+      color: Palette.primaryTextColorLight,
+      fontSize: 14
+  );
+  static TextStyle hintTextLight = TextStyle(
+      color: Palette.secondaryTextColorLight
+  );
   static TextStyle text = TextStyle(
     color: Palette.secondaryTextColor
+  );
+  static TextStyle textLight = TextStyle(
+      color: Palette.secondaryTextColorLight
   );
   static TextStyle subText = TextStyle(
     color: Palette.greyColor

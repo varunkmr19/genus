@@ -53,6 +53,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  infinite_listview:
+    dependency: "direct main"
+    description:
+      name: infinite_listview
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   intl:
     dependency: "direct main"
     description:

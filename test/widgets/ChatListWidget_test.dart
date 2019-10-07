@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:genus/main.dart';
+import 'package:genus/widgets/ChatListWidget.dart';
 
 void main(){
+  MaterialApp app = MaterialApp(
+    home: Scaffold(
+      body: ChatListWidget(),
+    ),
+  );
   testWidgets('ChatListWidget UI Test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(Genus());
+    await tester.pumpWidget(app);
 
     expect(find.byType(ListView),findsOneWidget);
   });
